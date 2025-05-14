@@ -1,0 +1,73 @@
+/* Base Styles */
+.course-list-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  .course-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+  
+  .course-title {
+    font-size: 2.5rem;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+  }
+  
+  .course-subtitle {
+    font-size: 1.1rem;
+    color: #64748b;
+  }
+  
+  /* Branches Grid */
+  .branches-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .branch-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border-top: 4px solid var(--card-color);
+  }
+  
+  .branch-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .branch-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .branch-card h3 {
+    color: #1e293b;
+    font-size: 1.25rem;
+    margin: 0;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .branches-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .course-title {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .branches-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  

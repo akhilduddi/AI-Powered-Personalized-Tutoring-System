@@ -1,0 +1,491 @@
+/* Home Container */
+.home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 40px;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .primary-button, .secondary-button {
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .primary-button {
+    background-color: #2ecc71;
+    color: white;
+  }
+  
+  .primary-button:hover {
+    background-color: #27ae60;
+    transform: translateY(-2px);
+  }
+  
+  .secondary-button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+  }
+  
+  .secondary-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Section Styling */
+  .section-heading {
+    text-align: center;
+    margin: 50px 0 30px;
+    font-size: 2rem;
+    color: #2c3e50;
+  }
+  
+  /* Process Steps */
+  .process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-bottom: 50px;
+  }
+  
+  .step-card {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .step-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .step-number {
+    background-color: #3498db;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .step-title {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #2c3e50;
+  }
+  
+  .step-description {
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .level-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .level-list li {
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  .level-list li:before {
+    content: "•";
+    color: #3498db;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -5px;
+  }
+  
+  /* Learning Process */
+  .learning-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-bottom: 50px;
+  }
+  
+  .feature-box {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #2ecc71;
+  }
+  
+  .feature-title {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #2c3e50;
+  }
+  
+  /* Evaluation Section */
+  .evaluation-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-bottom: 50px;
+  }
+  
+  .evaluation-card {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .evaluation-title {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #2c3e50;
+  }
+  
+  /* Benefits Section */
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-bottom: 50px;
+  }
+  
+  .benefit-item {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .benefit-item h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+  }
+  
+  /* Ready Section */
+  .ready-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #2ecc71, #27ae60);
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 40px;
+  }
+  
+  .ready-section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  .ready-section p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+  }
+  
+  .primary-button.large-button {
+    padding: 15px 35px;
+    font-size: 1.1rem;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+      font-size: 1rem;
+    }
+    
+    .cta-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .primary-button, .secondary-button {
+      width: 80%;
+      margin-bottom: 10px;
+    }
+  }
+
+  .compact-levels {
+    padding: 1rem;
+  }
+  
+  .level-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+  }
+  
+  .level-item {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 0.5rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  .level-range {
+    display: block;
+    font-weight: bold;
+    color: #2c3e50;
+    font-size: 0.9rem;
+  }
+  
+  .level-name {
+    display: block;
+    color: #3498db;
+    font-size: 0.85rem;
+    margin: 0.2rem 0;
+  }
+  
+  .level-desc {
+    display: block;
+    color: #7f8c8d;
+    font-size: 0.75rem;
+  }
+
+  .ultra-compact .step-title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .level-chip {
+    background: #f3f4f6;
+    padding: 0.2rem 0.5rem;
+    border-radius: 12px;
+    font-size: 10px;
+    white-space: nowrap;
+  }
+
+
+
+  .home-container {
+    position: relative;
+    overflow-x: hidden;
+  }
+  
+  .parallax-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    z-index: -1;
+  }
+  
+  .hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Add these for the motion effects */
+  .step-card, .feature-box, .evaluation-card, .benefit-item {
+    will-change: transform;
+    backface-visibility: hidden;
+  }
+  
+  /* Section spacing */
+  .system-overview, 
+  .learning-process, 
+  .evaluation-section, 
+  .benefits-section, 
+  .ready-section {
+    padding: 4rem 2rem;
+    position: relative;
+    background: white;
+    margin: 2rem 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+
+
+  /* Base Styles */
+.home-container {
+  position: relative;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+.dynamic-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -2;
+  transition: background-color 0.5s ease;
+}
+
+/* Hero Section with 3D Canvas */
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-canvas {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+/* Floating Elements */
+.floating-element {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: rgba(74, 107, 255, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  z-index: -1;
+}
+
+/* 3D Card Flip */
+.step-card {
+  perspective: 1000px;
+  width: 100%;
+  height: 200px;
+}
+
+.step-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
+}
+
+.step-card-front, .step-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  padding: 1.5rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+
+.step-card-back {
+  transform: rotateY(180deg);
+}
+
+/* Particles Background */
+.particles-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+/* Magnetic Button Effect */
+.primary-button.large-button {
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.primary-button.large-button::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 70%);
+  transform: scale(0);
+  transition: transform 0.5s ease;
+}
+
+.primary-button.large-button:hover::after {
+  transform: scale(1);
+}
+
+/* Benefit Icons */
+.benefit-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .step-card {
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .floating-element {
+    display: none;
+  }
+}

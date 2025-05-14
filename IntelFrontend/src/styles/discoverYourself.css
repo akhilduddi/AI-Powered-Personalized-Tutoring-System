@@ -1,0 +1,244 @@
+/* Base Styles */
+.discover-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  .discover-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .discover-title {
+    font-size: 2.5rem;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .discover-subtitle {
+    font-size: 1.1rem;
+    color: #64748b;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Branches Grid */
+  .branches-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+  
+  .branch-card {
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border-top: 4px solid var(--card-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .branch-card h3 {
+    color: #1e293b;
+    font-size: 1.5rem;
+    margin: 1.5rem 0 1rem;
+  }
+  
+  .branch-card p {
+    color: #64748b;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    flex-grow: 1;
+  }
+  
+  .branch-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pre-test-button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .discover-title {
+      font-size: 2rem;
+    }
+    
+    .branches-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* Animations */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .branch-logo {
+    animation: float 4s ease-in-out infinite;
+  }
+  
+  .branch-card:nth-child(2) .branch-logo {
+    animation-delay: 0.2s;
+  }
+  
+  .branch-card:nth-child(3) .branch-logo {
+    animation-delay: 0.4s;
+  }
+  
+  .branch-card:nth-child(4) .branch-logo {
+    animation-delay: 0.6s;
+  }
+  
+  .branch-card:nth-child(5) .branch-logo {
+    animation-delay: 0.8s;
+  }
+
+  .discover-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .discover-header {
+    margin-bottom: 30px;
+  }
+  
+  .discover-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #222;
+  }
+  
+  .discover-subtitle {
+    font-size: 1rem;
+    color: #666;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  /* Grid layout: 3 cards per row on laptops */
+  .branches-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Card styles */
+  .branch-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    min-height: 280px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .branch-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Logo inside card */
+  .branch-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin: 0 auto 12px;
+    color: white;
+    background: var(--card-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Title */
+  h3 {
+    font-size: 1.3rem;
+    color: #222;
+    margin-bottom: 8px;
+  }
+  
+  /* Description */
+  p {
+    font-size: 0.9rem;
+    color: #444;
+    margin-bottom: 12px;
+    padding: 0 10px;
+  }
+  
+  /* Button */
+  .pre-test-button {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: var(--card-color);
+    border: 2px solid transparent;
+  }
+  
+  .pre-test-button:hover {
+    background: white;
+    color: var(--card-color);
+    border: 2px solid var(--card-color);
+    transform: scale(1.05);
+  }
+  
+  /* 📌 Responsive Adjustments */
+  @media (max-width: 1024px) {
+    .branches-grid {
+      grid-template-columns: repeat(2, minmax(250px, 1fr)); /* 2 cards per row on tablets */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .branches-grid {
+      grid-template-columns: repeat(1, minmax(250px, 1fr)); /* 1 card per row on mobile */
+    }
+  }
+  

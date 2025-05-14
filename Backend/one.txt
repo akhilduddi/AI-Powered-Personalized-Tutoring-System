@@ -1,0 +1,17 @@
+CREATE  TABLE QuestionSet (
+id INT64,
+branch STRING,
+level STRING,
+module STRING,
+test_type STRING,
+question STRING,
+option_a STRING,
+option_b STRING,
+option_c STRING,
+option_d STRING,
+correct_option STRING,
+marks INT64
+);
+
+
+sqlite3 tutoringSystem.db

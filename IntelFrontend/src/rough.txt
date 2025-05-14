@@ -1,0 +1,61 @@
+  const [courses] = useState([
+    // Computer Science (15 courses)
+    { id: 1, title: 'Frontend Development', description: 'Build interfaces with React, Angular, Vue', instructor: 'Prof. Sarah Lee', duration: '6 weeks', branch: 'cse', level: 'Beginner', icon: '💻', color: '#6366f1' },
+    { id: 2, title: 'Backend Development', description: 'Node.js, Python, Ruby server programming', instructor: 'Dr. Raj Patel', duration: '8 weeks', branch: 'cse', level: 'Intermediate', icon: '⚙️', color: '#10b981' },
+    { id: 3, title: 'Fullstack Development', description: 'Complete MERN stack applications', instructor: 'Prof. Alex Chen', duration: '10 weeks', branch: 'cse', level: 'Advanced', icon: '🌐', color: '#3b82f6' },
+    { id: 4, title: 'Django Framework', description: 'Build web apps with Python', instructor: 'Dr. Priya Sharma', duration: '7 weeks', branch: 'cse', level: 'Intermediate', icon: '🐍', color: '#059669' },
+    { id: 5, title: 'DevOps Engineering', description: 'CI/CD, Docker, Kubernetes', instructor: 'Prof. Mike Johnson', duration: '8 weeks', branch: 'cse', level: 'Advanced', icon: '🔄', color: '#7c3aed' },
+    { id: 6, title: 'Cloud Computing', description: 'AWS, Azure, GCP fundamentals', instructor: 'Dr. Emily Wilson', duration: '6 weeks', branch: 'cse', level: 'Intermediate', icon: '☁️', color: '#0284c7' },
+    { id: 7, title: 'Data Structures', description: 'Master algorithms in Python', instructor: 'Prof. David Kim', duration: '9 weeks', branch: 'cse', level: 'Intermediate', icon: '📊', color: '#0d9488' },
+    { id: 8, title: 'Machine Learning', description: 'AI model building basics', instructor: 'Dr. Sanjay Verma', duration: '12 weeks', branch: 'cse', level: 'Advanced', icon: '🤖', color: '#db2777' },
+    { id: 9, title: 'UI/UX Design', description: 'User interface principles', instructor: 'Prof. Lisa Wong', duration: '5 weeks', branch: 'cse', level: 'Beginner', icon: '🎨', color: '#9333ea' },
+    { id: 10, title: 'Blockchain Basics', description: 'Introduction to Web3', instructor: 'Dr. Mark Taylor', duration: '6 weeks', branch: 'cse', level: 'Intermediate', icon: '⛓️', color: '#4f46e5' },
+    { id: 11, title: 'Cybersecurity', description: 'Ethical hacking fundamentals', instructor: 'Prof. Alan Smith', duration: '8 weeks', branch: 'cse', level: 'Advanced', icon: '🔒', color: '#dc2626' },
+    { id: 12, title: 'Mobile Development', description: 'React Native & Flutter', instructor: 'Dr. Neha Gupta', duration: '7 weeks', branch: 'cse', level: 'Intermediate', icon: '📱', color: '#2563eb' },
+    { id: 13, title: 'Database Systems', description: 'SQL and NoSQL databases', instructor: 'Prof. James Wilson', duration: '6 weeks', branch: 'cse', level: 'Intermediate', icon: '🗄️', color: '#0891b2' },
+    { id: 14, title: 'Computer Networks', description: 'Networking fundamentals', instructor: 'Dr. Anjali Rao', duration: '7 weeks', branch: 'cse', level: 'Intermediate', icon: '🌐', color: '#4d7c0f' },
+    { id: 15, title: 'Operating Systems', description: 'Linux/Windows internals', instructor: 'Prof. Robert Brown', duration: '8 weeks', branch: 'cse', level: 'Advanced', icon: '💾', color: '#713f12' },
+  
+    // Electronics (10 courses)
+    { id: 16, title: 'Embedded Systems', description: 'Arduino programming', instructor: 'Prof. Sunita Kapoor', duration: '8 weeks', branch: 'ece', level: 'Intermediate', icon: '🔌', color: '#f59e0b' },
+    { id: 17, title: 'VLSI Design', description: 'Chip design fundamentals', instructor: 'Dr. Ravi Shankar', duration: '10 weeks', branch: 'ece', level: 'Advanced', icon: '🖥️', color: '#b45309' },
+    { id: 18, title: 'IoT Fundamentals', description: 'Internet of Things basics', instructor: 'Prof. Vikram Joshi', duration: '6 weeks', branch: 'ece', level: 'Beginner', icon: '📶', color: '#047857' },
+    { id: 19, title: 'Digital Electronics', description: 'Logic gates and circuits', instructor: 'Dr. Ankit Patel', duration: '7 weeks', branch: 'ece', level: 'Beginner', icon: '🔋', color: '#0e7490' },
+    { id: 20, title: 'Signal Processing', description: 'Digital signal analysis', instructor: 'Dr. Priyanka Singh', duration: '9 weeks', branch: 'ece', level: 'Advanced', icon: '📡', color: '#6d28d9' },
+    { id: 21, title: 'PCB Design', description: 'Printed Circuit Boards', instructor: 'Prof. Sanjay Verma', duration: '5 weeks', branch: 'ece', level: 'Intermediate', icon: '🔧', color: '#be185d' },
+    { id: 22, title: 'Robotics', description: 'Introduction to robotics', instructor: 'Dr. Ramesh Kumar', duration: '8 weeks', branch: 'ece', level: 'Intermediate', icon: '🤖', color: '#4338ca' },
+    { id: 23, title: '5G Technology', description: 'Next-gen wireless networks', instructor: 'Prof. Arjun Singh', duration: '6 weeks', branch: 'ece', level: 'Advanced', icon: '📶', color: '#15803d' },
+    { id: 24, title: 'Microcontrollers', description: 'ARM and AVR programming', instructor: 'Dr. Meera Nair', duration: '7 weeks', branch: 'ece', level: 'Intermediate', icon: '💻', color: '#c2410c' },
+    { id: 25, title: 'Analog Circuits', description: 'Amplifiers and filters', instructor: 'Prof. Rahul Sharma', duration: '8 weeks', branch: 'ece', level: 'Advanced', icon: '🔌', color: '#6b21a8' },
+  
+    // Mechanical (10 courses)
+    { id: 26, title: 'CAD/CAM', description: 'Computer-Aided Design', instructor: 'Dr. Anil Kapoor', duration: '6 weeks', branch: 'mech', level: 'Beginner', icon: '✏️', color: '#ef4444' },
+    { id: 27, title: 'Thermodynamics', description: 'Heat and energy principles', instructor: 'Prof. Deepak Verma', duration: '8 weeks', branch: 'mech', level: 'Intermediate', icon: '🔥', color: '#ea580c' },
+    { id: 28, title: 'Automobile Engineering', description: 'Vehicle systems', instructor: 'Dr. Nisha Reddy', duration: '7 weeks', branch: 'mech', level: 'Intermediate', icon: '🚗', color: '#65a30d' },
+    { id: 29, title: 'Robotics & Automation', description: 'Industrial robotics', instructor: 'Prof. Vijay Kumar', duration: '9 weeks', branch: 'mech', level: 'Advanced', icon: '🏭', color: '#2563eb' },
+    { id: 30, title: 'HVAC Systems', description: 'Heating and cooling tech', instructor: 'Dr. Preeti Joshi', duration: '5 weeks', branch: 'mech', level: 'Beginner', icon: '❄️', color: '#7c3aed' },
+    { id: 31, title: 'Mechatronics', description: 'Mechanical + Electronics', instructor: 'Prof. Sanjay Gupta', duration: '8 weeks', branch: 'mech', level: 'Advanced', icon: '⚙️', color: '#db2777' },
+    { id: 32, title: 'Fluid Mechanics', description: 'Liquid and gas behavior', instructor: 'Dr. Ananya Das', duration: '7 weeks', branch: 'mech', level: 'Intermediate', icon: '💧', color: '#0891b2' },
+    { id: 33, title: 'Machine Design', description: 'Mechanical components', instructor: 'Prof. Rakesh Malhotra', duration: '9 weeks', branch: 'mech', level: 'Advanced', icon: '🛠️', color: '#ca8a04' },
+    { id: 34, title: 'CNC Programming', description: 'Computer Numerical Control', instructor: 'Dr. Anjali Deshpande', duration: '6 weeks', branch: 'mech', level: 'Intermediate', icon: '🖥️', color: '#16a34a' },
+    { id: 35, title: 'Material Science', description: 'Engineering materials', instructor: 'Prof. Sameer Khan', duration: '7 weeks', branch: 'mech', level: 'Beginner', icon: '🧪', color: '#9333ea' },
+  
+    // Civil (10 courses)
+    { id: 36, title: 'Structural Analysis', description: 'Building structure design', instructor: 'Dr. Priyanka Sharma', duration: '10 weeks', branch: 'civil', level: 'Advanced', icon: '🏗️', color: '#8b5cf6' },
+    { id: 37, title: 'Geotechnical Engineering', description: 'Soil mechanics', instructor: 'Prof. Vikas Rao', duration: '8 weeks', branch: 'civil', level: 'Intermediate', icon: '⛰️', color: '#d97706' },
+    { id: 38, title: 'Transportation Engineering', description: 'Road and highway design', instructor: 'Dr. Rajeev Sinha', duration: '7 weeks', branch: 'civil', level: 'Intermediate', icon: '🛣️', color: '#059669' },
+    { id: 39, title: 'Environmental Engineering', description: 'Water and waste management', instructor: 'Prof. Anita Verma', duration: '6 weeks', branch: 'civil', level: 'Beginner', icon: '🌳', color: '#0d9488' },
+    { id: 40, title: 'Surveying', description: 'Land measurement techniques', instructor: 'Dr. Arun Joshi', duration: '5 weeks', branch: 'civil', level: 'Beginner', icon: '📐', color: '#4338ca' },
+    { id: 41, title: 'Concrete Technology', description: 'Modern concrete applications', instructor: 'Prof. Deepak Sharma', duration: '7 weeks', branch: 'civil', level: 'Intermediate', icon: '🧱', color: '#be185d' },
+    { id: 42, title: 'Hydraulics', description: 'Fluid mechanics for civil', instructor: 'Dr. Meena Kapoor', duration: '6 weeks', branch: 'civil', level: 'Intermediate', icon: '💦', color: '#0284c7' },
+    { id: 43, title: 'Urban Planning', description: 'City development strategies', instructor: 'Prof. Vikram Joshi', duration: '8 weeks', branch: 'civil', level: 'Advanced', icon: '🏙️', color: '#4f46e5' },
+    { id: 44, title: 'Construction Management', description: 'Project planning', instructor: 'Dr. Sunita Rao', duration: '7 weeks', branch: 'civil', level: 'Intermediate', icon: '📊', color: '#c2410c' },
+    { id: 45, title: 'Earthquake Engineering', description: 'Seismic design principles', instructor: 'Prof. Raj Malhotra', duration: '6 weeks', branch: 'civil', level: 'Advanced', icon: '🌍', color: '#dc2626' },
+  
+    // Common (5 courses)
+    { id: 46, title: 'Engineering Mathematics', description: 'Essential math concepts', instructor: 'Dr. Ananya Das', duration: '4 weeks', branch: 'common', level: 'Beginner', icon: '🧮', color: '#14b8a6' },
+    { id: 47, title: 'Technical Communication', description: 'Engineering documentation', instructor: 'Prof. Meera Nair', duration: '3 weeks', branch: 'common', level: 'Beginner', icon: '📝', color: '#9333ea' },
+    { id: 48, title: 'Project Management', description: 'Agile and Waterfall methods', instructor: 'Dr. Rahul Kapoor', duration: '5 weeks', branch: 'common', level: 'Intermediate', icon: '📅', color: '#d97706' },
+    { id: 49, title: 'Research Methodology', description: 'Academic research skills', instructor: 'Prof. Neha Sharma', duration: '4 weeks', branch: 'common', level: 'Intermediate', icon: '🔍', color: '#0d9488' },
+    { id: 50, title: 'Ethics in Engineering', description: 'Professional responsibility', instructor: 'Dr. Priya Verma', duration: '3 weeks', branch: 'common', level: 'Beginner', icon: '⚖️', color: '#4338ca' }
+  ]);
