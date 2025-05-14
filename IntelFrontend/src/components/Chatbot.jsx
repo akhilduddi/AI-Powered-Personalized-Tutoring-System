@@ -9,7 +9,7 @@ const JunnuChatbot = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isMinimized, setIsMinimized] = useState(false);
   const chatEndRef = useRef(null);
-  const API_KEY = "AIzaSyC0i8-fH5frrh4LY4iSGXkeRL5p7XAOj_M";
+  const API_KEY = "Enter Your key";
 
   useEffect(() => {
     chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
